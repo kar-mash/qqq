@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminWindow</class>
+ <widget class="QWidget" name="AdminWindow">
+  <property name="windowTitle">
+   <string>Админ-панель</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- Таблица для отображения всех документов -->
+   <item>
+    <widget class="QTableView" name="allDocsTable"/>
+   </item>
+
+   <!-- Таблица для отображения документов пользователей -->
+   <item>
+    <widget class="QTableView" name="userDocsTable"/>
+   </item>
+
+   <!-- Таблица для отображения пользователей -->
+   <item>
+    <widget class="QTableView" name="usersTable"/>
+   </item>
+
+   <!-- Панель с кнопками -->
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <!-- Кнопки для работы с документами -->
+     <item>
+      <widget class="QPushButton" name="addDocButton">
+       <property name="text">
+        <string>Добавить документ</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="editDocButton">
+       <property name="text">
+        <string>Изменить документ</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteDocButton">
+       <property name="text">
+        <string>Удалить документ</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <!-- Панель с кнопками для управления пользователями -->
+   <item>
+    <layout class="QHBoxLayout" name="userButtonLayout">
+     <!-- Кнопки для работы с пользователями -->
+     <item>
+      <widget class="QPushButton" name="addUserButton">
+       <property name="text">
+        <string>Добавить пользователя</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="editUserButton">
+       <property name="text">
+        <string>Редактировать пользователя</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteUserButton">
+       <property name="text">
+        <string>Удалить пользователя</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <!-- Панель с кнопкой для добавления документов к пользователям -->
+   <item>
+    <layout class="QHBoxLayout" name="userDocButtonLayout">
+     <item>
+      <widget class="QPushButton" name="addUserDocButton">
+       <property name="text">
+        <string>Добавить договор пользователю</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
